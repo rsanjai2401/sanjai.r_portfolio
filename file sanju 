@@ -1,0 +1,35 @@
+PROGRAM
+
+sudo useradd -m student1
+
+sudo useradd -m student2
+
+sudo groupadd -f devops
+
+sudo usermod -aG devops student1
+
+sudo mkdir -p/devops_project
+
+sudo chown root:devops /devops_project
+
+sudo chmod 750 /devops_project
+
+sudo touch/devops_project/project.txt
+
+sudo chown root:devops /devops_project/project.txt
+
+sudo chmod 640 /devops_project/project.txt
+
+id student1
+
+id student2
+
+Is -Id /devops_project
+
+sudo ls -1/devops_project/project.txt
+
+sudo -u student1 sh -c 'if test -r/devops project/project.txt; then echo "student1: Readable"; else echo "student1: Not readable": fi'
+
+sudo -u student2 sh -c 'if test -r /devops_project/project.txt; then echo "student2: Readable"; else echo "student2: Not readable"; fi'
+
+sudo getfacl/devops_project/project.txt
