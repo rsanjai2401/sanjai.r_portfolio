@@ -1,0 +1,21 @@
+git -version
+
+mkdir devopslab
+
+cd devopslab
+
+git init
+
+touch sample1.txt
+
+git status
+
+git add sample1.txt
+
+cat samplel.txt
+
+echo "HELLO III CTIS"
+
+git add samplel.txt
+
+4
